@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>INGRESE EL VALOR </h2>
+
+@using (Html.BeginForm("Index", "Cajero", FormMethod.Post)) {
+
+<label for="cantidada">Ingrese la cantidad a retirar</label>
+<br>
+<input type="number" name="cantidada" required>
+<br>
+<input type="submit" value="Enviar">
+}
